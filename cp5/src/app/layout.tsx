@@ -1,4 +1,3 @@
-"use client"
 import NotFound from './not-found';
 import Cabecalho from "./components/Cabecalho/Cabecalho"
 import Rodape from "./components/Rodape/Rodape"
