@@ -26,18 +26,18 @@ export default function IdeaPage({ params }: { params: { slug: string } }) {
       }
   
     return (
-        <div>
+        <div >
         <h1>Ideias do Autor de "Worlds in Collision"</h1>
-        <h3>Ideia {slug}:</h3>
+        <h2>Ideia {slug}:</h2>
         <p>{ideia.description}</p>
         <Image 
           src={ideia.imageUrl} 
           alt={ideia.altText} 
           width={800}
-          height={500} 
+          height={200} 
           layout="responsive"
           priority={true}
-        />
+          />
       </div>
     );
   }
