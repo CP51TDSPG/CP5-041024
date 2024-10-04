@@ -4,7 +4,7 @@
 @tailwind utilities;
 
 h1 {
-    @apply text-3xl font-bold text-gray-800 mb-4 text-center; 
+    @apply text-3xl text-gray-800 mb-4 text-center; 
     @apply leading-tight;
     @apply shadow-lg;
 }
@@ -21,13 +21,13 @@ li:hover {
 }
 
 p {
-    @apply mb-2 text-lg text-gray-800 text-center; 
+    @apply mb-2 text-lg text-gray-800 text-justify; 
     @apply p-2 rounded-lg; 
     @apply transition duration-300 ease-in-out; 
 }
 
 h2 {
-    @apply text-3xl font-semibold text-gray-800 mb-4 text-center uppercase p-6; 
+    @apply text-3xl text-gray-800 mb-4 text-center uppercase p-6; 
     @apply transition duration-300 ease-in-out; 
     @apply shadow-lg; 
 
@@ -35,4 +35,7 @@ h2 {
 body {
     @apply p-6 bg-gray-100 min-h-screen;
     
+}
+span {
+    @apply text-orange-500;
 }
