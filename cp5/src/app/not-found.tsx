@@ -1,9 +1,10 @@
 
-export default function NotFound() {
+const NotFound = () => {
   return (
-    <div>
-      <h1>404 : Not Found</h1>
-      <p>O recurso que você tentou acessar não está disponivel!</p>
+    <div className="flex items-center justify-center h-screen">
+      <h1 className="text-4xl">404 - Página Não Encontrada</h1>
     </div>
-  )
-}
+  );
+};
+
+export default NotFound;

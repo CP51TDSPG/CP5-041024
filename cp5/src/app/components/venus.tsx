@@ -1,13 +1,27 @@
-import React from 'react';
 
-const VenusPage: React.FC = () => {
+import Image from 'next/image';
+
+const Venus = () => {
     return (
-        <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
-            <h1 className="text-3xl font-bold mb-4">Vênus: Um Planeta Jovem</h1>
-            <img src="/images/venus.jpg" alt="Vênus" className="w-full max-w-md mb-4" />
-            <p className="text-lg px-4 text-center">
-                Velikovsky sugere que Vênus não é um corpo celeste estável, mas sim um planeta que passou por mudanças dramáticas, o que teria impactado a Terra.
-            </p>
+        <div className="text-center">
+            <h2 className="text-xl font-bold">Vênus como um Planeta Jovem</h2>
+            <p>
+                Velikovsky argumenta que Vênus não é um corpo celeste estável e inalterado. Ele sugere que Vênus, na verdade, é um planeta
+                relativamente "jovem", que passou por mudanças cataclísmicas em sua história recente.
+                As teorias de Velikovsky sobre Vênus e outros planetas têm sido amplamente criticadas e rejeitadas pela comunidade
+                científica. Contudo, sua obra provocou discussões sobre a natureza do nosso sistema solar e a história da Terra.
+                O livro "Worlds in Collision" continua a ser lido e debatido por aqueles que estão interessados em teorias alternativas
+                e na interseção entre ciência, história e mitologia.</p>
+
+            <Image
+                src="/images/venus.png"
+                alt="Vênus"
+                width={600}
+                height={400}
+                className="rounded-lg"
+            />
         </div>
     );
 };
+
+export default Venus;
