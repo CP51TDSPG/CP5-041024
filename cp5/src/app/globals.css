@@ -33,7 +33,7 @@ h2 {
 
 }
 body {
-    @apply p-6 bg-gray-100 min-h-screen;
+    @apply p-6 bg-gray-200 min-h-screen;
     
 }
 span {
