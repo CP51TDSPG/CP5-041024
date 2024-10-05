@@ -1,4 +1,3 @@
-import NotFound from './not-found';
 import Cabecalho from "./components/Cabecalho/Cabecalho"
 import Rodape from "./components/Rodape/Rodape"
 import "./globals.css"
@@ -13,14 +12,13 @@ export const viewport = {
 export default function RootLayout({
   children,
 }: Readonly<{ children: React.ReactNode }>) {
-  const is404Page = React.isValidElement(children) && children.type === NotFound;
 
   return (
     <html lang="pt-br">
       <body>
-        {!is404Page && <Cabecalho />}
+        <Cabecalho />
         {children}
-        {!is404Page && <Rodape />}
+        <Rodape />
       </body>
     </html>
   )
